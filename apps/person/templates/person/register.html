@@ -1,0 +1,17 @@
+{% extends 'global/base.html' %}
+{% load static %}
+{% block head %}
+<link rel="stylesheet" href="{% static 'person/css/register.css' %}">
+{% endblock head %}
+{% block content %}
+    <form id="id_form_register_person" class="form-inline" action="{% url 'person:register' %}" method="POST">{% csrf_token %}
+        {% include 'global/partials/_form.html' %}
+        <div class="text-center mt-3">
+            <button type="submit" class="btn btn-primary btn-lg">Cadastrar</button>
+        </div>
+    </form>
+{% endblock content %}
+
+{% block footer %}
+<script src="{% static 'person/js/register.js' %}" defer></script>
+{% endblock footer %}
