@@ -1,0 +1,10 @@
+{% extends 'global/base.html' %}
+{% load static %}
+{% block content %}
+    <form id="id_form_register_person" class="form-inline" action="{% url 'person:update' object.id %}" method="POST">{% csrf_token %}
+        {% include 'global/partials/_form.html' %}
+        <div class="text-center mt-3">
+            <button type="submit" class="btn btn-primary btn-lg">Alterar</button>
+        </div>
+    </form>
+{% endblock content %}
