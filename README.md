@@ -37,6 +37,7 @@ O projeto a seguir é referente a um teste prático.
 Esclarecimentos:
 - A escolha de usar CBV(Class-Based Views) para esse projeto foi devido a rápida implementação e ganho no momento de testar.
 - A escolha do SQLite foi motivada pela baixa dependência no caso de teste da aplicação.
+- A api utilizada no teste é diferente da que foi passada devido a problemas de CORS
 - No que se refere aos requisitos poucas coisas estão diferentes, entre elas: Email como campo único, funcionalidade de exclusão de pessoa e cobertura de testes.
 
 
