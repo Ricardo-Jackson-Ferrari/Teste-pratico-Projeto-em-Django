@@ -12,6 +12,10 @@ django-widget-tweaks = "*"
 isort = "*"
 blue = "*"
 ipdb = "*"
+pytest = "*"
+model-bakery = "*"
+coverage = "*"
+pytest-django = "*"
 
 [requires]
 python_version = "3.11"
