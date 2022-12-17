@@ -55,7 +55,6 @@
 window.onload = ()=>{
     document.querySelectorAll('.button-delete').forEach(button_del=>{
         let person_name = button_del.getAttribute('person')
-        console.log(person_name)
         button_del.addEventListener('click', event=>{
             event.preventDefault()
             const confirmed = confirm(`"Tem certeza de que deseja excluir a pessoa "${person_name}" ?`)
