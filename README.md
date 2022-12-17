@@ -88,7 +88,7 @@ Esclarecimentos:
 - Acesse a pasta do projeto no terminal execute:
 
 ```console
-cd app
+cd teste-pratico-projeto-em-django
 cp env .env
 pip install -r requirements.txt
 poetry install
