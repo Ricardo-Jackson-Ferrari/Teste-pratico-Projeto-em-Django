@@ -13,7 +13,9 @@ class Person(models.Model):
     note = models.TextField(null=True, blank=True, verbose_name='observação')
 
     def get_full_name(self):
-        full_name = f'{self.first_name} {self.last_name}'.strip()
+        full_name = (
+            f'{self.first_name.title()} {self.last_name.title()}'.strip()
+        )
         return full_name.strip()
 
     def __str__(self) -> str:

@@ -1,6 +1,6 @@
 from django.contrib.messages.views import SuccessMessageMixin
 from django.urls import reverse_lazy
-from django.views.generic import CreateView, ListView, UpdateView
+from django.views.generic import CreateView, DeleteView, ListView, UpdateView
 
 from .forms import PersonRegisterForm
 from .models import Person
@@ -30,3 +30,10 @@ class UpdatePersonView(SuccessMessageMixin, UpdateView):
     success_message = 'Pessoa atualizada com sucesso!'
     success_url = PERSON_LIST_URL
     extra_context = {'title': 'Atualização de pessoa'}
+
+
+class DeletePersonView(SuccessMessageMixin, DeleteView):
+    model = Person
+    template_name = 'person/update.html'
+    success_message = 'Pessoa deletada com sucesso!'
+    success_url = PERSON_LIST_URL

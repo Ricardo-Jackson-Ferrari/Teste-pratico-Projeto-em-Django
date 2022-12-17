@@ -10,4 +10,5 @@ urlpatterns = [
     path(
         'atualizar/<int:pk>', views.UpdatePersonView.as_view(), name='update'
     ),
+    path('deletar/<int:pk>', views.DeletePersonView.as_view(), name='delete'),
 ]
