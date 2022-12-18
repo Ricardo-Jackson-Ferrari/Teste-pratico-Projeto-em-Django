@@ -92,7 +92,6 @@ Esclarecimentos:
 cd teste-pratico-projeto-em-django
 cp env .env
 pip install -r requirements.txt
-poetry install
 ```
 
 ### Como instalar localmente (Com dependências de desenvolvimento):
@@ -101,7 +100,6 @@ poetry install
 cd app
 cp env .env
 pip install -r requirements-dev.txt
-poetry install
 ```
 
 **OBS. Não se esqueça de alterar o arquivo .env que foi gerado a partida da cópia de exemplo "env" que vem na raíz do projeto.**
